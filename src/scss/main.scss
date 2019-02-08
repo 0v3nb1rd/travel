@@ -52,12 +52,25 @@ b, strong {
 a {
 	color: $accent;
 	text-decoration: underline;
+	transition: .25s;
 	&:hover, &:focus {
 		color: $accent;
+		transition: .15s;
 	}
 }
 
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.bg-extra-dark-gray {
+	background-color: #1c1c1c;
+}
+
 @import "layouts/header";
+@import "layouts/card";
 @import "layouts/footer";
 
 @import "media"; // Always at the end
