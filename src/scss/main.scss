@@ -57,7 +57,18 @@ a {
 	}
 }
 
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.bg-extra-dark-gray {
+	background-color: #1c1c1c;
+}
+
 @import "layouts/header";
+@import "layouts/card";
 @import "layouts/footer";
 
 @import "media"; // Always at the end

@@ -30,4 +30,11 @@ $(function() {
 	$('.mobile-menu-button').click(function() {
 		$('.mobile-menu').stop().slideToggle();
 	});
+
+	$('.card').hover(function() {
+    $(this).find('.card__textHover').stop().animate({
+      height: "toggle",
+      opacity: "toggle"
+    }, 300);
+  });
 });
