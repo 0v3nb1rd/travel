@@ -20,6 +20,7 @@ body {
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: $text;
+	background-color: #d8e0e5;
 	input, textarea {
 		border: #666 1px solid;
 		outline: none;
@@ -40,6 +41,9 @@ body {
 		width: 100%;
 	}
 }
+figure {
+	margin: 0;
+}
 
 .text-center {
 	text-align: center;
@@ -47,6 +51,12 @@ body {
 
 b, strong {
 	font-weight: bold;
+}
+
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 a {
@@ -58,6 +68,7 @@ a {
 }
 
 @import "layouts/header";
+@import "layouts/card";
 @import "layouts/footer";
 
 @import "media"; // Always at the end

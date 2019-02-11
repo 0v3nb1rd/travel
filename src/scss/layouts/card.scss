@@ -1,0 +1,131 @@
+.card {
+	// margin: 5px;	
+	padding: 0;
+	background-color: #fff;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+	overflow: hidden;
+	transition: box-shadow $duration;
+
+	&:hover {
+		box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	&__date {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 45px;
+		height: 45px;
+		padding-top: 10px;
+		line-height: 13px;
+		font-weight: bold;
+		color: #fff;
+		background-color: $accent;
+		border-radius: 50%;
+		&__day {
+			display: block;
+			font-size: 14px;
+		}
+		&__month {
+			display: block;
+			font-size: 10px;
+			text-transform: uppercase;
+		}
+	}
+	&__thumb {
+		height: 235px;
+		// width: 100%;
+		overflow: hidden;
+		background-color: #000;
+		transition: height $duration;
+
+		img {
+			display: block;
+			// width: 100%;
+			opacity: 1;
+			transition: opacity $duration, transform $duration;
+			transform: scale(1);
+		}
+
+		.card:hover & img {
+			opacity: .6;
+			transform: scale(1.2)
+		}
+
+		.card:hover & {
+			height: 150px;
+		}
+	}
+
+	&__body {
+		position: relative;
+		padding: 20px;
+		height: 110px;
+		transition: height $duration;
+
+		.card:hover & {
+			height: 110px + 85px;
+		}
+	}
+
+	&__category {
+		position: absolute;
+		left: 0;
+		top: -25px;
+		height: 25px;
+		padding: 0 15px;
+		background-color: $accent;
+		color: #fff;
+		font-size: 11px;
+		line-height: 25px;
+		text-transform: uppercase;
+	}
+	&__title {
+		margin: 0;
+		padding: 0;
+		// padding: 0 0 10px 0;
+		font-size: 22px;
+		color: #000;
+		font-weight: bold;
+		opacity: .6;
+		text-shadow: 0px 5px 5px rgba(0,0,0,0.6);
+		transition: all $duration;
+
+		.card:hover & {
+			opacity: 1;
+			text-shadow: 0px 0px 0px rgba(0,0,0,0);
+
+		}
+	}
+
+	&__description {
+		position: absolute;
+		left: 20px;
+		right: 20px;
+		top: 100px;
+		margin: 0;
+		padding: 0;
+		color: $desc;
+		font-size: 14px;
+		line-height: 27px;
+		opacity: 0;
+		transition: opacity $duration - .1s, transform $duration - .1s;
+		transition-delay: 0s;
+		transform: translateY(25px);
+
+		.card:hover & {
+			opacity: 1;
+			transition-delay: 0.1s;
+			transform: translateY(0);
+		}
+	}
+}
+
+.card:hover .card__thumb img{
+	opacity: .6;
+}
