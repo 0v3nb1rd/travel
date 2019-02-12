@@ -51,13 +51,29 @@ b, strong {
 
 a {
 	color: $accent;
-	text-decoration: underline;
+	text-decoration: none;
 	&:hover, &:focus {
+		text-decoration: none;
 		color: $accent;
 	}
 }
 
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+h2, p, figure {
+	margin: 0;
+	padding: 0;
+}
+
+
 @import "layouts/header";
+
+@import "layouts/card";
+
 @import "layouts/footer";
 
 @import "media"; // Always at the end
