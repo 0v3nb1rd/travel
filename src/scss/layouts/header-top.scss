@@ -1,0 +1,39 @@
+
+.parallax {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+	&__layer {
+		position: relative;
+		padding: 25vh 10%;
+		min-height: 100vh;
+		width: 100vw;
+		box-sizing: border-box;
+		box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.7);
+		transform-style: inherit;
+		background-image: url(../img/category/highway-wallpaper-7.jpg);
+		color: #fff;
+		box-shadow: 0 2px 2px #000;
+		// background: 50% 50% / cover;
+		z-index: 2;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			box-shadow: 0 0 8px 1px rgba(0,0,0,0.7);
+		}
+	}
+
+	&__title {
+		transform: translateZ(.25px) scale(.75);
+    transform-origin: 50% 100%;
+	}
+}
