@@ -69,6 +69,24 @@ h2, p, figure {
 	padding: 0;
 }
 
+main.paralax {
+	height: 100%;
+	margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+	// font-family: Nunito;
+	
+	&__section {
+		text-align: center;
+    font-size: 175%;
+    color: #fff;
+    text-shadow: 0 2px 2px #000;
+	}
+}
+
 
 @import "layouts/header";
 
