@@ -12,6 +12,10 @@
 	color: #fff;
 }
 
+section {
+	margin-bottom: 10px;
+}
+
 body {
 	position: relative;
 	font-size: 18px;
@@ -103,7 +107,7 @@ h2, p, figure {
 
 @import "layouts/section-header";
 
-@import "layouts/card";
+@import "layouts/section-card";
 
 @import "layouts/footer";
 
