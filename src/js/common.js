@@ -37,5 +37,14 @@ $(function() {
       height: "toggle",
       opacity: "toggle"
     }, 300);
+	});
+	
+	//Parallax
+	$('.parallax-window').parallax({
+		// speed: 0.5,
+		// iosFix: false,
+		// androidFix: false
+    // naturalWidth: 600,
+    // naturalHeight: 400
   });
 });

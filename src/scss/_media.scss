@@ -5,6 +5,21 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+	.parallax-window {
+		min-height: 300px;
+	}
+
+	.section-header {
+		&__title {
+			font-size: 38px;
+			line-height: 40px;
+		}
+
+		// &__description {
+		// 	font-size: 14px;
+		// 	line-height: 16px;
+		// }
+	}
 	
 }
 
@@ -21,6 +36,22 @@
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+
+	.parallax-window {
+		min-height: 250px;
+	}
+
+	.section-header {
+		&__title {
+			font-size: 34px;
+			line-height: 36px;
+		}
+
+		&__description {
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
 
 }
 
@@ -43,6 +74,23 @@
 				font-size: 18px;
 				line-height: 38px;
 			}
+		}
+	}
+
+	.parallax-window {
+		min-height: 200px;
+		// background: transparent;
+		// background-size: cover;
+	}
+
+	.section-header {
+		&__title {
+			font-size: 28px;
+			line-height: 30px;
+		}
+
+		&__description {
+			display: none;
 		}
 	}
 }
