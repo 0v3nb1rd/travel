@@ -36,6 +36,14 @@ body {
 	}
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .img-responsive {
 	display: block;
 	max-width: 100%;
@@ -68,7 +76,7 @@ ul {
 	list-style-type: none;
 }
 
-h2, p, figure {
+h2, p, figure, article {
 	margin: 0;
 	padding: 0;
 }
