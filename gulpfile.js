@@ -48,6 +48,7 @@ gulp.task('js', function() {
 	return gulp.src([
 		'src/libs/jquery/dist/jquery.min.js',
 		'src/libs/parallax.js/parallax.min.js',
+		'src/libs/wow/dist/wow.min.js',
 		// 'node_modules/bootstrap/dist/js/bootstrap.min.js',
 
 		'src/js/common.js' // Always at the end
