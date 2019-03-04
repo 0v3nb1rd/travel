@@ -1,7 +1,13 @@
 .top-line {
 	position: relative;
-	background-color: $dark;
+	background-color: rgba($dark, .7);
 	height: 65px;
+
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99;
+	transition: top 0.2s;
 }
 
 .logo {
