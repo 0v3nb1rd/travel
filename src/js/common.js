@@ -2,7 +2,7 @@ $(function() {
 	// 
 	$('.logo-letter').each(function() {
 		var ths = $(this);
-		ths.html(ths.html().replace('Man', '<span>Man</span>'));
+		ths.html(ths.html().replace('MAN', '<span>MAN</span>'));
 	});
 
 	$('.search').click(function() {
@@ -35,12 +35,16 @@ $(function() {
 	var prevScrollpos = window.pageYOffset;
 	$(window).scroll(function() {
 		var currentScrollpos = window.pageYOffset;
-		console.log(currentScrollpos);
+		if($(window).scrollTop()){
+			$('#navbar').addClass('sticky');
+		} else{
+			$('#navbar').removeClass('sticky');
+		}
+		
 		if(prevScrollpos > currentScrollpos){
 			$('#navbar').css({"top":"0"});
 		} else {
 			$('#navbar').css({"top":"-65px"});
-			// $('#navbar').css({"top":"-65px"});
 		}
 		prevScrollpos = currentScrollpos;
 	});

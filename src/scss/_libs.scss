@@ -10,4 +10,17 @@
 
 //Animate.css:
 @import "../libs/animate.css/animate.min";
+.animated.delay-50ms {
+	animation-delay: 50ms;
+}
+.animated.delay-100ms {
+	animation-delay: 100ms;
+}
+.animated.delay-150ms {
+	animation-delay: 150ms;
+}
+.animated.delay-200ms {
+	animation-delay: 200ms;
+}
+
 //WOW.js:
