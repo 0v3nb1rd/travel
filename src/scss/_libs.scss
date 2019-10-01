@@ -1,8 +1,12 @@
 // Bootstrap:
-@import "../libs/bootstrap/scss/bootstrap-reboot.scss";
-@import "../libs/bootstrap/scss/bootstrap-grid.scss";
-@import "../libs/bootstrap/scss/utilities/_sizing.scss";
+@import "bootstrap/scss/bootstrap-reboot.scss";
+@import "bootstrap/scss/bootstrap-grid.scss";
+@import "bootstrap/scss/utilities/_sizing.scss";
+
 // FontAwesome:
-@import "src/libs/font-awesome/web-fonts-with-css/scss/fontawesome.scss";
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "@fortawesome/fontawesome-free/scss/brands.scss";
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
+// @import "@fortawesome/fontawesome-free/scss/regular.scss";
 //MDBootstrap:
 // @import "node_modules/mdbootstrap/scss/mdb.scss";

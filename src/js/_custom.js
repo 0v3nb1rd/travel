@@ -1,5 +1,7 @@
-$(function() {
-	// 
+document.addEventListener("DOMContentLoaded", function() {
+
+// $(function() {
+		// Custom JS
 	$('.logo-letter').each(function() {
 		var ths = $(this);
 		ths.html(ths.html().replace('Man', '<span>Man</span>'));
@@ -37,5 +39,6 @@ $(function() {
       height: "toggle",
       opacity: "toggle"
     }, 300);
-  });
+	});
+	
 });
